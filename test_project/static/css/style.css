@@ -1,0 +1,87 @@
+ul {
+  width: auto;
+  display: inline-block;
+}
+/* Navigation */
+#navigation {
+  list-style: none;
+  font-family: "Century Gothic", Verdana, Arial, Sans-Serif;
+  margin: 0;
+  padding: 0;
+  font-size: 1.2em;
+}
+
+/* CSS for each Parent Item */
+#navigation li {
+  clear: both;
+  height: 2em;
+}
+
+#navigation li a {
+  float: left;
+  display: block;
+  padding: 4px;
+  text-decoration: none;
+  color: #666;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  margin-right: 10px;
+}
+
+/* Change background color and font color
+of parent items when mouse hover */
+#navigation li:hover a,
+#navigation li a:hover {
+  background: #999;
+  color: #fff;
+}
+#navigation ul {
+  display: none;
+}
+
+/* Each Child Item will be visible if mouse hover */
+#navigation li:hover ul {
+  display: block;
+}
+
+#navigation ul {
+  list-style: none;
+  float: left;
+  margin: 0;
+  padding: 4px 8px;
+}
+
+#navigation ul li {
+  float: left;
+  clear: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  height: auto;
+  color: #999;
+}
+/*
+Reset and re style
+link of each child item
+*/
+#navigation li:hover ul li a,
+#navigation ul li a {
+  display: inline;
+  padding: 0 6px 0 0;
+  float: none;
+  text-transform: lowercase;
+  color: #999;
+  background: none;
+}
+
+#navigation li:hover ul li a:hover,
+#navigation ul li a:hover {
+  background: none;
+  color: #000;
+}
+
+/* Active links */
+.active > a {
+  background-color: red;
+  color: white;
+}
